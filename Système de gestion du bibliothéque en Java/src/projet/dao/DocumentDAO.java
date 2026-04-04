@@ -2,6 +2,7 @@ package dao;
 
 import model.Document;
 import model.Document.TypeDocument;
+import util.ConnexionDB;
 
 import java.sql.*;
 import java.util.ArrayList;

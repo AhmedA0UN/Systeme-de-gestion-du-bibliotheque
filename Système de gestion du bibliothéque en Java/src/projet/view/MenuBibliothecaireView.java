@@ -66,13 +66,13 @@ public class MenuBibliothecaireView extends JFrame {
 
         // ---- Listeners
         btnDocuments.addActionListener(e ->
-            new GestionDocumentsView(idBibliothecaire).setVisible(true));
+            new GestionDocumentsView().setVisible(true));
         btnAdherents.addActionListener(e ->
             new GestionAdherentsView().setVisible(true));
         btnPrets.addActionListener(e ->
             new GestionPretsView(idBibliothecaire).setVisible(true));
         btnRetours.addActionListener(e ->
-            new GestionRetoursView(idBibliothecaire).setVisible(true));
+            new GestionRetoursView().setVisible(true));
         btnDeconnexion.addActionListener(e -> {
             dispose();
             new LoginView().setVisible(true);

@@ -2,6 +2,7 @@ package dao;
 
 import model.Utilisateur;
 import model.Utilisateur.Role;
+import util.ConnexionDB;
 
 import java.sql.*;
 

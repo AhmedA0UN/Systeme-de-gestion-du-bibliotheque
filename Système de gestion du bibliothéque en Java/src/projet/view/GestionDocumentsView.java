@@ -35,13 +35,11 @@ public class GestionDocumentsView extends JFrame {
     private JButton    btnRechercher;
 
     private DocumentController controller;
-    private final int idBibliothecaire;
 
     // Données en mémoire (liste locale avant "Enregistrer")
     private List<Document> documents;
 
-    public GestionDocumentsView(int idBibliothecaire) {
-        this.idBibliothecaire = idBibliothecaire;
+    public GestionDocumentsView() {
         try {
             controller = new DocumentController();
             documents  = controller.getTousDocuments();

@@ -5,7 +5,6 @@ import model.Pret;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.DefaultTableCellRenderer;
 import java.awt.*;
 import java.sql.SQLException;
 import java.time.LocalDate;
@@ -21,11 +20,9 @@ public class GestionRetoursView extends JFrame {
     private JTable            table;
     private JTextArea         txtRemarque;
     private JButton           btnRetour, btnFermer, btnActualiser;
-    private final int         idBibliothecaire;
     private PretController    pretController;
 
-    public GestionRetoursView(int idBibliothecaire) {
-        this.idBibliothecaire = idBibliothecaire;
+    public GestionRetoursView() {
         try { pretController = new PretController(); }
         catch (SQLException e) { JOptionPane.showMessageDialog(null, "Erreur BD : " + e.getMessage()); }
         initUI();

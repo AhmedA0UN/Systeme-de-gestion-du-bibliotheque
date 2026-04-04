@@ -3,6 +3,7 @@ package dao;
 import model.Adherent;
 import model.Adherent.Statut;
 import model.Utilisateur.Role;
+import util.ConnexionDB;
 
 import java.sql.*;
 import java.util.ArrayList;

@@ -2,6 +2,7 @@ package dao;
 
 import model.Pret;
 import model.Pret.Statut;
+import util.ConnexionDB;
 
 import java.sql.*;
 import java.util.ArrayList;
