@@ -39,9 +39,7 @@ CREATE TABLE bibliothecaire (
         ON DELETE CASCADE
 );
 
--- ============================================================
--- TABLE : document
--- ============================================================
+
 CREATE TABLE document (
     id_document    INT AUTO_INCREMENT PRIMARY KEY,
     titre          VARCHAR(200) NOT NULL,
