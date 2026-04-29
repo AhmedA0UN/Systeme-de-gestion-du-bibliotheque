@@ -2,7 +2,7 @@ package dao;
 
 import model.Pret;
 import model.Pret.Statut;
-import util.ConnexionDB;
+import util.SingletonConnection;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ public class PretDAO implements IDao<Pret, Integer> {
     private Connection conn;
 
     public PretDAO() throws SQLException {
-        this.conn = ConnexionDB.getConnection();
+        this.conn = SingletonConnection.getInstance();
     }
 
     private Pret mapper(ResultSet rs) throws SQLException {

@@ -3,7 +3,7 @@ package dao;
 import model.Adherent;
 import model.Adherent.Statut;
 import model.Utilisateur.Role;
-import util.ConnexionDB;
+import util.SingletonConnection;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ public class AdherentDAO implements IDao<Adherent, Integer> {
     private Connection conn;
 
     public AdherentDAO() throws SQLException {
-        this.conn = ConnexionDB.getConnection();
+        this.conn = SingletonConnection.getInstance();
     }
 
     private Adherent mapper(ResultSet rs) throws SQLException {

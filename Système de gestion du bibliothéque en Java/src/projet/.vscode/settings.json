@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\Mega-PC\\Documents\\vs projets\\GIT\\Systeme-de-gestion-du-bibliotheque\\Système de gestion du bibliothéque en Java\\src\\.metadata\\mysql-connector-j-9.5.0.jar"
+    ]
+}

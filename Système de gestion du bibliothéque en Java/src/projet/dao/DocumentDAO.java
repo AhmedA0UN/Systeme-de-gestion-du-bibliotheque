@@ -2,7 +2,7 @@ package dao;
 
 import model.Document;
 import model.Document.TypeDocument;
-import util.ConnexionDB;
+import util.SingletonConnection;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ public class DocumentDAO implements IDao<Document, Integer> {
     private Connection conn;
 
     public DocumentDAO() throws SQLException {
-        this.conn = ConnexionDB.getConnection();
+        this.conn = SingletonConnection.getInstance();
     }
 
     // ------------------------------------------------------------------

@@ -2,7 +2,7 @@ package dao;
 
 import model.Utilisateur;
 import model.Utilisateur.Role;
-import util.ConnexionDB;
+import util.SingletonConnection;
 
 import java.sql.*;
 
@@ -14,7 +14,7 @@ public class UtilisateurDAO {
     private Connection conn;
 
     public UtilisateurDAO() throws SQLException {
-        this.conn = ConnexionDB.getConnection();
+        this.conn = SingletonConnection.getInstance();
     }
 
     /**
